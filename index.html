@@ -194,6 +194,13 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--text);li
 .learn-card .learn-example{background:var(--light);border-radius:10px;padding:16px;margin-top:14px;}
 .learn-card .learn-example h4{font-size:.82em;font-weight:700;color:var(--navy);margin-bottom:6px;}
 .learn-card .learn-example p{font-size:.85em;color:var(--muted);margin-bottom:0;font-style:italic;}
+.learn-card .learn-framework{background:#1a1a2e;border-radius:10px;padding:18px 20px;margin-top:14px;border-left:3px solid var(--accent);}
+.learn-card .learn-framework h4{font-size:.82em;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;}
+.learn-card .learn-framework ol{list-style:none;padding:0;margin:0;counter-reset:fw;}
+.learn-card .learn-framework ol li{counter-increment:fw;font-size:.84em;color:rgba(255,255,255,.75);padding:5px 0;border-bottom:1px solid rgba(255,255,255,.06);line-height:1.5;}
+.learn-card .learn-framework ol li:last-child{border-bottom:none;}
+.learn-card .learn-framework ol li::before{content:counter(fw) ". ";color:var(--accent);font-weight:700;}
+.learn-card .learn-framework ol li span{color:rgba(255,255,255,.4);font-size:.9em;}
 .learn-nav{display:flex;justify-content:space-between;align-items:center;margin-top:24px;}
 .learn-dots{display:flex;gap:8px;}
 .learn-dot{width:10px;height:10px;border-radius:50%;background:var(--border);transition:background .2s;}
@@ -355,6 +362,18 @@ footer a{color:#556677;text-decoration:none;}
         <h4>Example</h4>
         <p>While building the game Glitch, Tiny Speck's team built an internal chat tool to coordinate. That rough prototype — never intended as a product — became Slack. The best prototypes often emerge from solving your own problems first.</p>
       </div>
+      <div class="learn-framework">
+        <h4>Prototype Planning Canvas</h4>
+        <ol>
+          <li>Riskiest Assumption <span>— What's the one thing that must be true for this to work?</span></li>
+          <li>Fidelity Level <span>— Paper sketch, clickable mockup, Wizard-of-Oz, or coded prototype?</span></li>
+          <li>What to Test <span>— Desirability (do they want it?), feasibility (can we build it?), viability (will it make money)?</span></li>
+          <li>Test Audience <span>— Who tests it? How many? Existing users or target users?</span></li>
+          <li>Success Signal <span>— What behaviour or metric proves the assumption? Define before testing.</span></li>
+          <li>Time Box <span>— Max 1-2 weeks. If you can't learn in that time, simplify the prototype.</span></li>
+          <li>Next Step Decision <span>— Build, iterate, pivot, or kill. Decide the day results come in.</span></li>
+        </ol>
+      </div>
       <div class="learn-nav">
         <span class="learn-counter">1 of 4</span>
         <div class="learn-dots"><span class="learn-dot active"></span><span class="learn-dot"></span><span class="learn-dot"></span><span class="learn-dot"></span></div>
@@ -374,6 +393,18 @@ footer a{color:#556677;text-decoration:none;}
       <div class="learn-example">
         <h4>Example</h4>
         <p>Before public launch, Slack tested with just 8 companies in a closed beta. The riskiest assumption wasn't "can we build chat?" — it was "will teams actually switch from email?" The beta tested exactly that.</p>
+      </div>
+      <div class="learn-framework">
+        <h4>MVP Hypothesis Template</h4>
+        <ol>
+          <li>Problem Statement <span>— "[Target user] struggles with [problem] when trying to [goal]."</span></li>
+          <li>Riskiest Assumption <span>— The assumption that, if wrong, kills the entire idea.</span></li>
+          <li>MVP Definition <span>— The smallest thing you can build to test that assumption.</span></li>
+          <li>Success Metric <span>— One number. "X% of users [take action] within [timeframe]."</span></li>
+          <li>Kill Threshold <span>— Below what metric do you abandon the idea? Set BEFORE building.</span></li>
+          <li>MVP Type <span>— Landing page, concierge, Wizard-of-Oz, single-feature, or piecemeal?</span></li>
+          <li>Learning Timeline <span>— How long before you have enough data to decide? Days, not months.</span></li>
+        </ol>
       </div>
       <div class="learn-nav">
         <span class="learn-counter">2 of 4</span>
@@ -395,6 +426,18 @@ footer a{color:#556677;text-decoration:none;}
         <h4>Example</h4>
         <p>Stewart Butterfield shut down Glitch — a game with devoted fans and years of development — because the growth curve was flat. He redirected the entire company to an internal tool nobody asked for. That pivot created a $27B company.</p>
       </div>
+      <div class="learn-framework">
+        <h4>Pivot / Persevere Decision Framework</h4>
+        <ol>
+          <li>Current Hypothesis <span>— What did we believe when we started? Has evidence supported it?</span></li>
+          <li>Growth Metrics <span>— Is the growth curve bending up or flattening? Trend matters more than absolute.</span></li>
+          <li>Engagement Depth <span>— Are users coming back? Retention curves — do they flatten or keep dropping?</span></li>
+          <li>Customer Signal <span>— Do users love it but can't find it? Or find it but don't love it?</span></li>
+          <li>Runway Check <span>— How many months of runway remain? Pivoting costs time and money.</span></li>
+          <li>Pivot Options <span>— Zoom-in, zoom-out, customer segment, platform, channel, or technology pivot?</span></li>
+          <li>Sunk Cost Check <span>— Am I persisting because of evidence or because of emotional attachment?</span></li>
+        </ol>
+      </div>
       <div class="learn-nav">
         <span class="learn-counter">3 of 4</span>
         <div class="learn-dots"><span class="learn-dot"></span><span class="learn-dot"></span><span class="learn-dot active"></span><span class="learn-dot"></span></div>
@@ -414,6 +457,18 @@ footer a{color:#556677;text-decoration:none;}
       <div class="learn-example">
         <h4>Example</h4>
         <p>Slack chose to build an integrations platform rather than building every tool (file sharing, video, project management) themselves. By partnering with 2,400+ apps, they became the hub without building the spokes — a masterclass in strategic partnering.</p>
+      </div>
+      <div class="learn-framework">
+        <h4>Build / Buy / Partner Scorecard</h4>
+        <ol>
+          <li>Core vs Context <span>— Core to value prop = build. Context (supporting) = buy or partner.</span></li>
+          <li>Speed to Market <span>— Build: 6-18 months. Buy: 1-3 months. Partner: weeks. How urgent?</span></li>
+          <li>Control Required <span>— Build = full control. Partner = shared. Buy = depends on integration.</span></li>
+          <li>Long-term Cost <span>— Build: high upfront, low ongoing. Buy: license fees forever. Partner: revenue share.</span></li>
+          <li>Strategic Risk <span>— Partner dependency? Acquisition integration risk? Build team availability?</span></li>
+          <li>Reversibility <span>— Can you switch approaches later? Build locks in least. Partner locks in most.</span></li>
+          <li>Decision <span>— Score each option 1-5 on all factors. Highest total wins. Gut-check the result.</span></li>
+        </ol>
       </div>
       <div class="learn-nav">
         <span class="learn-counter">4 of 4</span>
